@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+  "./src/**/*.{ts,tsx}",
+  // "./node_modules/tw-elements-react/dist/js/**/*.js"
+
+
+  ],
   theme: {
     extend: {},
+    
+  colors: {
+    primary:"#EB0E31",
+    secondary: "#00000"
   },
   screens: {
     xs: { min: "300px", max: "420px" },
@@ -12,6 +21,7 @@ export default {
     xl: { min: "1280px", max: "1535px" },
     "2xl": { min: "1536px" },
   },
-  plugins: ["tw-elements-react/dist/plugin.cjs"],
+  },
+  plugins: [],
 }
 
