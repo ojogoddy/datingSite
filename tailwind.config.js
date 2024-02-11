@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-  "./src/**/*.{ts,tsx}",
+  // "./src/**/*.{ts,tsx}",
   // "./node_modules/tw-elements-react/dist/js/**/*.js"
+  
+  "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}",
+
 
 
   ],
@@ -11,7 +15,8 @@ export default {
     
   colors: {
     primary:"#EB0E31",
-    secondary: "#00000"
+    secondary: "#00000",
+    white: "#fff"
   },
   screens: {
     xs: { min: "300px", max: "420px" },
